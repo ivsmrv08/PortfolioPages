@@ -1,0 +1,392 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #000;
+    
+}
+
+section {
+    display: block;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 123.5px;
+    max-width: 1400px;
+}
+/*=========================*/
+
+.nav {
+    width: 100%;
+    height: 82px;
+    padding-top: 27px;
+}
+
+.Logo-link {
+    margin-top: 9px;
+    margin-right: 508px;
+    display: inline-block;
+    width: 130px;
+    height: 39px;
+    background-image: url('../resourses/Logo.png');
+    background-repeat: no-repeat;
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: -0.11em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 39px;
+    color: #1bff07;
+}
+
+.nav-list {
+    margin-top: 6px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.nav-list-link {
+    margin-right: 50px;
+    display: inline-block;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list-link:hover {
+    color: #1bff07;
+    cursor: pointer;
+}
+
+.nav-list-link:nth-last-child(1) {
+    margin-right: 0;
+}
+
+/*=========================*/
+
+.hero {
+    position: relative;
+    min-width: 1400px;
+    height: 765px;
+    background-image: url(../resourses/main-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+h1 {
+    position: absolute;
+    bottom: 94px;
+    width: 919px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 68px;
+    letter-spacing: -2.9px;
+    color: #1bff07;
+}
+
+.all-projects-title,
+.all-skills-title {
+    color: #fff;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 72px;
+    letter-spacing: -2px;
+}
+
+
+
+h3 {
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 46px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 334px;
+    width: 430px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+
+/*===================================*/
+
+.black-section{
+    padding: 150px 0;
+}
+
+.all-projects {
+    margin-bottom: 150px;
+}
+
+.all-projects-title {
+    margin-bottom: 40px;
+}
+
+.project {
+    position: relative;
+    border-radius: 32px;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-title {
+    position: absolute;
+    left: 50px;
+    bottom: 94px;
+}
+
+.project-text {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    line-height: 39px;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.all-projects-btn {
+    margin-top: 80px;
+    display: block;
+    width: 582px;
+    background-color: #1bff07;
+    border-radius: 10px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    line-height: 153px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.all-projects-btn:hover {
+    color: #1bff07;
+    background-color: #000;
+    border: 1px solid #1bff07;
+}
+
+/*=====================================*/
+
+.all-skills {
+    margin-bottom: 150px;
+}
+
+.all-skills-title{
+    margin-bottom: 48px;
+}
+
+.skill {
+    margin-bottom: 60px;
+}
+
+.skill-title {
+    position: relative;
+    margin-bottom: 15px;
+    color: #1bff07;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 46px;
+    letter-spacing: -0.03em;
+}
+
+.skill-img {
+    margin-bottom: 12px;
+    display: block;
+    margin-left: 2px;
+    width: 45px;
+    height: 44px;
+    }
+
+.skill-text {
+    display: block;
+    width: 778px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+/*=======================================*/
+
+.all-services {
+    margin-bottom: 150px;
+}
+
+.all-services-title {
+    padding-top: 12px;
+    margin-bottom: 74px;
+    display: block;
+    width: 403px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 46px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.service {
+    margin-bottom: 74px;
+}
+
+.service:nth-last-child(2) {
+    margin-bottom: 160px;
+}
+
+.service:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+
+.service-img {
+    height: 200px;
+    border-radius: 30px;
+}
+
+.service-info {
+    display: block;
+    padding: 40px 40px;
+    background-color: #191C19;
+    border-radius: 30px;
+}
+
+
+.service-info-title {
+    margin-bottom: 15px;
+    color: #1bff07;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 72px;
+    letter-spacing: -0.03em;
+}
+
+.service-info-text {
+    display: block;
+    width: 749px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+/*=======================================*/
+
+.contacts {
+    position: relative;
+    min-width: 1400px;
+    height: 717px;
+    background-color: #191C19;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 30px;
+}
+
+.contacts-img {
+    background-image: url('../resourses/Contacts.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.contacts-block {
+    position: absolute;
+    top: 320px;
+    
+}
+
+.contacts-block-link,
+.contacts-block-text {
+    display: block;
+}
+
+.contacts-block-text {
+    margin-bottom: 28px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+
+.contacts-block-link {
+    margin-bottom: 20px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contacts-block-link:hover {
+    color: #1bff07;
+}
+
+/*=======================================*/
+
+.footer {
+    min-width: 1400px;
+    padding-top: 76px;
+    padding-bottom: 90px;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+}
+.footer-text {
+    margin-bottom: 66px;
+    font-family: "Manrope";
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: -0.03em;
+    word-spacing: 1px;
+    color: #000;
+}
+
+.footer-law {
+    font-family: "Manrope";
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: #000;
+    line-height: 27px;
+    opacity: 0.5;
+}
