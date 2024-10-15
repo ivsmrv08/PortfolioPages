@@ -6,6 +6,18 @@ body {
     box-sizing: border-box;
     width: 100%;
     background-color: #000;
+    font-family: 'IBM Plex Mono';
+}
+
+.main__img {
+    position: relative;
+    margin-bottom: 150px;
+    display: block;
+    height: 765px;
+    background-image: url('../resourses/main-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     
 }
 
@@ -25,15 +37,13 @@ section {
     padding-top: 27px;
 }
 
-.Logo-link {
+.nav__link_left {
     margin-top: 9px;
-    margin-right: 508px;
     display: inline-block;
     width: 130px;
     height: 39px;
     background-image: url('../resourses/Logo.png');
     background-repeat: no-repeat;
-    font-family: "IBM Plex Mono";
     font-weight: 700;
     font-size: 42px;
     letter-spacing: -0.11em;
@@ -44,16 +54,16 @@ section {
     color: #1bff07;
 }
 
-.nav-list {
+.nav__list {
     margin-top: 6px;
+    float: right;
     vertical-align: top;
     display: inline-block;
 }
 
-.nav-list-link {
+.nav__link {
     margin-right: 50px;
     display: inline-block;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -62,32 +72,21 @@ section {
     text-decoration: none;
 }
 
-.nav-list-link:hover {
+.nav__link:hover {
     color: #1bff07;
     cursor: pointer;
 }
 
-.nav-list-link:nth-last-child(1) {
+.nav__link:nth-last-child(1) {
     margin-right: 0;
 }
 
 /*=========================*/
 
-.hero {
-    position: relative;
-    min-width: 1400px;
-    height: 765px;
-    background-image: url(../resourses/main-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-h1 {
+.hero__title {
     position: absolute;
     bottom: 94px;
     width: 919px;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 80px;
     line-height: 68px;
@@ -95,20 +94,16 @@ h1 {
     color: #1bff07;
 }
 
-.all-projects-title,
-.all-skills-title {
+.projects__title,
+.skills__title {
     color: #fff;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 55px;
     line-height: 72px;
     letter-spacing: -2px;
 }
 
-
-
 h3 {
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 35px;
     line-height: 46px;
@@ -116,12 +111,10 @@ h3 {
     color: #fff;
 }
 
-
-.hero-text {
+.hero__text {
     position: absolute;
     top: 334px;
     width: 430px;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
@@ -132,15 +125,12 @@ h3 {
 
 /*===================================*/
 
-.black-section{
-    padding: 150px 0;
-}
 
-.all-projects {
+.projects__list {
     margin-bottom: 150px;
 }
 
-.all-projects-title {
+.projects__title {
     margin-bottom: 40px;
 }
 
@@ -152,17 +142,16 @@ h3 {
     background-repeat: no-repeat;
 }
 
-.project-title {
+.project__title {
     position: absolute;
     left: 50px;
     bottom: 94px;
 }
 
-.project-text {
+.project__text {
     position: absolute;
     left: 50px;
     bottom: 50px;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     line-height: 39px;
     font-size: 30px;
@@ -170,13 +159,12 @@ h3 {
     color: #fff;
 }
 
-.all-projects-btn {
+.projects__btn {
     margin-top: 80px;
     display: block;
     width: 582px;
     background-color: #1bff07;
     border-radius: 10px;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 30px;
     letter-spacing: -0.03em;
@@ -186,7 +174,7 @@ h3 {
     color: #000;
 }
 
-.all-projects-btn:hover {
+.projects__btn:hover {
     color: #1bff07;
     background-color: #000;
     border: 1px solid #1bff07;
@@ -194,30 +182,28 @@ h3 {
 
 /*=====================================*/
 
-.all-skills {
+.skills__list {
     margin-bottom: 150px;
 }
 
-.all-skills-title{
+.skills__title{
     margin-bottom: 48px;
 }
-
-.skill {
+    .skill {
     margin-bottom: 60px;
 }
 
-.skill-title {
+.skill__title {
     position: relative;
     margin-bottom: 15px;
     color: #1bff07;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 35px;
     line-height: 46px;
     letter-spacing: -0.03em;
 }
 
-.skill-img {
+.skill__img {
     margin-bottom: 12px;
     display: block;
     margin-left: 2px;
@@ -225,10 +211,9 @@ h3 {
     height: 44px;
     }
 
-.skill-text {
+.skill__text {
     display: block;
     width: 778px;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 22px;
     line-height: 29px;
@@ -238,16 +223,15 @@ h3 {
 
 /*=======================================*/
 
-.all-services {
+.services {
     margin-bottom: 150px;
 }
 
-.all-services-title {
+.services__title {
     padding-top: 12px;
     margin-bottom: 74px;
     display: block;
     width: 403px;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 35px;
     line-height: 46px;
@@ -268,12 +252,12 @@ h3 {
 }
 
 
-.service-img {
+.service__img {
     height: 200px;
     border-radius: 30px;
 }
 
-.service-info {
+.service__info {
     display: block;
     padding: 40px 40px;
     background-color: #191C19;
@@ -281,20 +265,18 @@ h3 {
 }
 
 
-.service-info-title {
+.service__title {
     margin-bottom: 15px;
     color: #1bff07;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 55px;
     line-height: 72px;
     letter-spacing: -0.03em;
 }
 
-.service-info-text {
+.service__text {
     display: block;
     width: 749px;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 22px;
     line-height: 29px;
@@ -315,7 +297,7 @@ h3 {
     border-radius: 30px;
 }
 
-.contacts-img {
+.contacts__img {
     background-image: url('../resourses/Contacts.png');
     background-repeat: no-repeat;
     background-position: right;
@@ -325,20 +307,19 @@ h3 {
     border-bottom-right-radius: 30px;
 }
 
-.contacts-block {
+.contacts__list { 
     position: absolute;
     top: 320px;
     
 }
 
-.contacts-block-link,
-.contacts-block-text {
+.contacts__link,
+.contacts__text {
     display: block;
 }
 
-.contacts-block-text {
+.contacts__text {
     margin-bottom: 28px;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 35px;
     line-height: 60px;
@@ -347,9 +328,8 @@ h3 {
 }
 
 
-.contacts-block-link {
+.contacts__link {
     margin-bottom: 20px;
-    font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
@@ -358,7 +338,7 @@ h3 {
     color: #fff;
 }
 
-.contacts-block-link:hover {
+.contacts__link:hover {
     color: #1bff07;
 }
 
@@ -371,7 +351,7 @@ h3 {
     background-color: #fff;
     border-radius: 30px 30px 0 0;
 }
-.footer-text {
+.footer__title {
     margin-bottom: 66px;
     font-family: "Manrope";
     font-weight: 400;
@@ -381,7 +361,7 @@ h3 {
     color: #000;
 }
 
-.footer-law {
+.footer__text {
     font-family: "Manrope";
     font-weight: 400;
     font-size: 20px;
