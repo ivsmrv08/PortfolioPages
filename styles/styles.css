@@ -8,9 +8,15 @@ body {
     font-family: 'IBM Plex Mono';
 }
 
-.main__img {
+
+.container {
+    margin: 0 auto;
+    padding: 0 123.5px;
+    max-width: 1400px;
+}
+
+.header {
     position: relative;
-    margin-bottom: 150px;
     display: block;
     height: 765px;
     background-image: url('../resourses/main-img.jpg');
@@ -20,14 +26,6 @@ body {
     
 }
 
-section {
-    display: block;
-}
-.container {
-    margin: 0 auto;
-    padding: 0 123.5px;
-    max-width: 1400px;
-}
 /*=========================*/
 
 .nav {
@@ -80,8 +78,6 @@ section {
     margin-right: 0;
 }
 
-/*=========================*/
-
 .hero__title {
     position: absolute;
     bottom: 94px;
@@ -91,6 +87,24 @@ section {
     line-height: 68px;
     letter-spacing: -2.9px;
     color: #1bff07;
+}
+
+
+.hero__text {
+    position: absolute;
+    top: 334px;
+    width: 430px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+
+/*=========================*/
+main {
+    padding-top: 150px;
 }
 
 .projects__title,
@@ -110,24 +124,8 @@ h3 {
     color: #fff;
 }
 
-.hero__text {
-    position: absolute;
-    top: 334px;
-    width: 430px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: -0.03em;
-    color: #fff;
-}
-
 
 /*===================================*/
-
-
-.projects__list {
-    margin-bottom: 150px;
-}
 
 .projects__title {
     margin-bottom: 40px;
@@ -135,10 +133,14 @@ h3 {
 
 .project {
     position: relative;
-    border-radius: 32px;
+      
+}
+
+.project__img {
+    display: block;
     height: 550px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 32px;
 }
 
 .project__title {
@@ -181,6 +183,10 @@ h3 {
 
 /*=====================================*/
 
+.skills {
+    margin-top: 150px;
+}
+
 .skills__list {
     margin-bottom: 150px;
 }
@@ -188,8 +194,12 @@ h3 {
 .skills__title{
     margin-bottom: 48px;
 }
-    .skill {
+.skill {
     margin-bottom: 60px;
+}
+
+.skill:nth-last-child(1) {
+    margin-bottom: 0;
 }
 
 .skill__title {
@@ -223,7 +233,7 @@ h3 {
 /*=======================================*/
 
 .services {
-    margin-bottom: 150px;
+    margin: 150px 0;
 }
 
 .services__title {
@@ -250,7 +260,6 @@ h3 {
     margin-bottom: 0;
 }
 
-
 .service__img {
     height: 200px;
     border-radius: 30px;
@@ -262,7 +271,6 @@ h3 {
     background-color: #191C19;
     border-radius: 30px;
 }
-
 
 .service__title {
     margin-bottom: 15px;
@@ -306,19 +314,16 @@ h3 {
     border-bottom-right-radius: 30px;
 }
 
-.contacts__list { 
-    position: absolute;
-    top: 320px;
-    
+.contacts__link {
+    display: block;
+    margin-bottom: 20px;
+
 }
 
-.contacts__link,
 .contacts__text {
     display: block;
-}
-
-.contacts__text {
-    margin-bottom: 28px;
+    position: absolute;
+    top: 320px;
     font-weight: 400;
     font-size: 35px;
     line-height: 60px;
@@ -326,9 +331,14 @@ h3 {
     color: #fff;
 }
 
+.contacts__list {
+    position: absolute;
+    top: 408px;
+}
 
-.contacts__link {
-    margin-bottom: 20px;
+.contacts__link_inst,
+.contacts__link_tlg,
+.contacts__link_mail {
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
@@ -337,7 +347,9 @@ h3 {
     color: #fff;
 }
 
-.contacts__link:hover {
+.contacts__link_inst:hover,
+.contacts__link_tlg:hover,
+.contacts__link_mail:hover {
     color: #1bff07;
 }
 

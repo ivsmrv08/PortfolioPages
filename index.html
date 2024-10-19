@@ -19,66 +19,54 @@
     <title>AlexOrlov | Frontend</title>
   </head>
   <body>
-  <div class="main__img">
-  <header>
+  <header class="header">
     <div class="container">
-    <div class="nav">
-            <a class="nav__link_left" href="#">ORLOV</a>
-            <div class="nav__list">
-              <a class="nav__link" href="#myprojetcs">портфолио</a>
-              <a class="nav__link" href="#myskills">компетенции</a>
-              <a class="nav__link" href="#myservices">услуги</a>
-              <a class="nav__link" href="#mycontacts">контакты</a>
+      <div class="nav">
+        <a class="nav__link_left" href="#">ORLOV</a>
+        <div class="nav__list">
+           <a class="nav__link" href="#projects">портфолио</a>
+              <a class="nav__link" href="#skills">компетенции</a>
+              <a class="nav__link" href="#services">услуги</a>
+              <a class="nav__link" href="#contacts">контакты</a>
             </div>
           </div>
+          <p class="hero__text">
+            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов
+          </p>
+          <h1 class="hero__title">
+            Привет, я Саша — фронтенд разработчик и дизайнер сайтов
+          </h1>
           </div>
     </header>
     <main>
-      <section class="hero">
+      <section id="projects">
         <div class="container">
-        <p class="hero__text">
-          Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов
-        </p>
-        <h1 class="hero__title">
-          Привет, я Саша — фронтенд разработчик и дизайнер сайтов
-        </h1>
-        </div>
-      </section>
-      </main>
-</div>
-      <section class="projects">
-        <div class="container">
-        <ul id="myprojetcs" class="projects__list">
+          <div class="projects">
           <h2 class="projects__title">Самые свежие проекты</h2>
-          <li
-              class="project"
-              style="background-image: url('resourses/Project_1.jpg')"
-            >
+          <ul class="projects__list">
+          <li class="project">
+              <img class="project__img" src="resourses/Project_1.jpg" alt="Страница сайта#1">
               <h3 class="project__title">Realhome</h3>
               <p class="project__text">дизайн,верстка, настройка</p>
           </li>
-          <li
-              class="project"
-              style="background-image: url('resourses/Project_2.jpg')"
-            >
+          <li class="project">
+            <img class="project__img" src="resourses/Project_1.jpg" alt="Страница сайта#2">
               <h3 class="project__title">GLASS</h3>
               <p class="project__text">разработка интерфейса</p>
           </li>
-          <li
-              class="project"
-              style="background-image: url('resourses/Project_3.jpg')"
-            >
+          <li class="project">
+            <img class="project__img" src="resourses/Project_1.jpg" alt="Страница сайта#3">
               <h3 class="project__title">Fesiyen</h3>
               <p class="project__text">разработка интерфейса</p>
           </li>
-            <a class="projects__btn" href="#">Смотреть все проекты</a>
         </ul>
-        <ul id="myskills" class="all-skills">
-          </ul>
+            <a class="projects__btn" href="#">Смотреть все проекты</a>
           </div>
+        </div>
         </section>
-        <section class="skills">
+        <section id="skills">
           <div class="container">
+          <div class="skills">
           <h2 class="skills__title">Мои компетенции</h2>
           <li class="skill">
             <img class="skill__img" src="resourses/ic-html.png" alt="Иконка HTML">
@@ -96,7 +84,7 @@
             </style>
             <img class="skill__img" src="resourses/ic-lib.png" alt="Иконка LIB">
               <h3 class="skill__title">Работа с библиотеками и фреймворками</h3>
-              <p class="skill__text">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+              <p class="skill__text">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, та кими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
           </li>
           <li class="skill">
             <img class="skill__img" src="resourses/ic-mob.png" alt="Иконка MOB">
@@ -105,9 +93,11 @@
           </li>
         </ul>
         </div>
+        </div>
         </section>
-        <section class="services">
+        <section id="services">
           <div class="container">
+            <div class="services">
         <ul id="myservices" class="services__list">
           <h2 class="services__title">Помогаю реализовать широкий спектр задач</h2>
           <li class="service">
@@ -140,17 +130,20 @@
           </li>
         </ul>
       </div>
+      </div>
       </section>
-      <section id="mycontacts" class="contacts">
-        <div class="contacts__img"></div>
+      <section id="contacts">
+        <div class="contacts">
+        <div class="contacts__img">
         <div class="container">
-        <div class="contacts__list">
           <p class="contacts__text">для связи:</p>
-          <a class="contacts__link" href="https://www.instagram.com/" target="_blank" >instagram</a>
-          <a class="contacts__link" href="https://t.me/webdevlair" target="_blank">telegram</a>
-          <a class="contacts__link" href="mailto:example@mail.ru" target="_blank">mail</a>
+          <ul class="contacts__list">
+          <li class="contacts__link"><a class="contacts__link_inst" href="https://www.instagram.com/" target="_blank" >instagram</a></li>
+          <li class="contacts__link"><a class="contacts__link_tlg" href="https://t.me/webdevlair" target="_blank">telegram</a></li>
+          <li class="contacts__link"><a class="contacts__link_mail" href="mailto:example@mail.ru" target="_blank">mail</a></li>
+        </ul>
         </div>
-        </div>
+      </div>
         </div>
       </section>
     </main>
